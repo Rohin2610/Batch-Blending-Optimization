@@ -1,4 +1,10 @@
-# Batch blending energy optimization
+# Batch blending energy optimization. I compared six mixer speeds in a simulated 500 L blending tank to find the
+lowest-energy setting that met a 90-second batch deadline.
+
+<150 rpm for 80 seconds>met the deadline using <2.37 Wh per batch>.
+That was <62% less modeled shaft energy> than running at 240 rpm for
+51 seconds. When I tightened the deadline to 75 seconds, the preferred
+speed increased to 180 rpm.
 
 **Decision:** Choose a speed and stop time for one 500 L tank that minimizes modeled shaft energy while meeting a batch deadline. This independent study combines Python time-series analysis with mixer power calculations. All sensor signals are synthetic.
 
